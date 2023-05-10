@@ -1,0 +1,107 @@
+html {
+   
+background-color:darkgrey;
+}
+
+#list {
+float:right;
+text-align:left;
+
+
+}
+
+main{
+
+
+
+}
+
+#konfigurator {
+    background-image: url('assets/Backplate/Backplate.png');
+    width: 1280px;
+    height: 720px;
+    background-size: cover;
+    position: absolute;
+}
+
+#aotest {
+    background-image: url('assets/3x5/Spad_Tyl/3x5_Tyl_ao.png');
+    width: 1280px;
+    height: 720px;
+    background-size: cover;
+    position: absolute;
+    z-index: 0
+}
+
+#color {
+    width: 1280px;
+    height: 720px;
+    mask-image: url("assets/3x5/Spad_Tyl/mask.png");
+    position: absolute;
+    mask-size: 1280px 720px;
+    mask-mode: luminance;
+    mix-blend-mode: multiply;
+    z-index: 1
+}
+
+
+
+
+
+#lighting {
+    background-image: url('assets/3x5/Spad_Tyl/Lighting.png');
+    width: 1280px;
+    height: 720px;
+    background-size: cover;
+    position: absolute;
+    mix-blend-mode: multiply;
+    z-index: 2
+}
+
+#reflections {
+    background-image: url('Reflections.png');
+    width: 1280px;
+    height: 720px;
+    background-size: cover;
+    position: absolute;
+    mix-blend-mode: screen;
+    z-index: 3
+}
+
+.btn{
+    margin:5px;
+    width:60px;
+    height:60px;
+    border-radius:30px;
+}
+
+.red {
+    background-color:lightcoral;
+}
+
+.blue {
+    background-color: darkblue;
+}
+
+.green {
+    background-color: darkgreen;
+}
+
+.pink {
+    background-color: deeppink;
+}
+
+.black {
+    background-color: black;
+}
+#buttons {
+padding:10%;
+width:100%;
+
+}
+
+fieldset{
+    width:100%;
+   
+}
+

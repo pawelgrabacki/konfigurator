@@ -1,1 +1,189 @@
-test
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>konfigurator_test_01</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+
+</head>
+<body>
+    <main>
+        
+      
+        
+        <h1>Konfigurator_test_01da</h1>
+        
+        <div id="list">
+
+            <fieldset>
+                <legend>Garaz</legend>
+
+
+
+
+                <div>
+                    <input type="checkbox" id="AOcheckbox" name="AO" onclick="ao_foo()" >
+                    <label for="horns">1.AO</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="Color_checkbox" name="Color" onclick="color_foo()" >
+                    <label for="horns">2.Color</label>
+                </div>
+                <div id="buttons">
+                    <button class="btn blue" onclick="blue_foo()"></button>
+                    <button class="btn red" onclick="red_foo()"></button>
+                    <button class="btn green" onclick="green_foo()"></button>
+                    <button class="btn pink " onclick="pink_foo()"></button>
+                    <button class="btn black " onclick="black_foo()"></button>
+
+                </div>
+
+
+
+                <div>
+                    <input type="checkbox" id="lighting_checkbox" name="Lighting" onclick="lighting_foo()" >
+                    <label for="horns">3.Lighting</label>
+                </div>
+
+
+
+                <div>
+                    <input type="checkbox" id="Reflections_checkbox" name="Reflections" onclick="reflections_foo()" >
+                    <label for="scales">4.Reflections</label>
+                </div>
+
+
+
+
+
+            </fieldset>
+            
+
+        </div>
+        
+        
+         
+        <div id="konfigurator">
+
+            <div id="aotest"></div>
+            <div id="color"></div>
+            <div id="lighting"></div>
+            <div id="reflections"></div>
+
+
+        </div>
+
+
+
+
+
+
+</main>
+        <script>
+
+
+            function blue_foo() { 
+                var color = document.getElementById("color");
+                
+                color.style.backgroundColor = "#6377c2";
+               
+            }
+
+            function red_foo() {
+                var color = document.getElementById("color");
+
+                color.style.backgroundColor = "#ad1a1a";
+
+            }
+            function green_foo() {
+                var color = document.getElementById("color");
+
+                color.style.backgroundColor = "#1aad41";
+
+            }
+
+            function pink_foo() {
+                var color = document.getElementById("color");
+
+                color.style.backgroundColor = "deeppink";
+
+            }
+
+            function black_foo() {
+                var color = document.getElementById("color");
+
+                color.style.backgroundColor = "black";
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            function ao_foo() {
+                var checkBoxAo = document.getElementById("AOcheckbox");
+                var ao = document.getElementById("aotest");
+                if (checkBoxAo.checked == true) {
+                    ao.style.display = "block";
+                } else {
+                    ao.style.display = "none";
+                }
+            }
+
+
+
+            function color_foo() {
+                var checkBoxColor = document.getElementById("Color_checkbox");
+                var color = document.getElementById("color");
+                if (checkBoxColor.checked == true) {
+                    color.style.display = "block";
+                } else {
+                    color.style.display = "none";
+                }
+            }
+
+            function lighting_foo() {
+                var checkBoxLighting = document.getElementById("lighting_checkbox");
+                var lighting = document.getElementById("lighting");
+                if (checkBoxLighting.checked == true) {
+                    lighting.style.display = "block";
+                } else {
+                    lighting.style.display = "none";
+                }
+            }
+
+            function reflections_foo() {
+                var checkBoxReflections = document.getElementById("Reflections_checkbox");
+                var reflections = document.getElementById("reflections");
+                if (checkBoxReflections.checked == true) {
+                    reflections.style.display = "block";
+                } else {
+                    reflections.style.display = "none";
+                }
+            }
+        </script>
+
+
+
+
+
+
+    </body>
+    </html>
